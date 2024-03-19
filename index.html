@@ -8,28 +8,53 @@
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="index.css">
+      <style type="text/css">
+        .d1{
+          padding-top: 50pxpx;
+          height: 300px;
+          width: 300px;
+          transition-duration: 3s;
+          color: black;
+          font-weight: bolder;
+          background-color: gainsboro;
+          margin:20px;
+          border-radius: 50px;
+    
+        }
+        .d1:hover{
+        border-top-left-radius:0px ;
+        border-top-right-radius: 150px;
+        border-bottom-left-radius: 150px;
+        border-bottom-right-radius: 0px;
+        scale: (1.5);
+        }
+        /* .d2{
+          transition-timing-function: linear;
+          transform: translate(100px);
+          transition-duration: 2s;
+        } */
+      </style>
       <title>Gaurav Portfolio</title>
    </head>
    <body>
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light xy" style="background-image: linear-gradient(to right,orange,green,blue,violet);">
+      <nav class="navbar navbar-expand-lg navbar-light xy" style=" z-index: 4; border: 2px black;">
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto" >
-              <li class="nav-item nb">
-                  <a class="nav-link"  href="#home">
-                  <span id="part1">Home</span></a>
+            <ul class="navbar-nav ml-auto"  align="center">
+              <li class="nav-item nb" >
+                 <a class="nav-link"  href="#home"> <span id="nvbtxt">Home</span></a>
               </li>
               <li class="nav-item nb">
-                  <a class="nav-link"  href="#about"><span id="part2">About</span></a>
+                  <a class="nav-link"  href="#about"><span id="nvbtxt">About</span></a>
               </li>
               <li class="nav-item nb">
-                  <a class="nav-link"  href="#skill"><span id="part2">Skill</span></a>
+                  <a class="nav-link"  href="#skill"><span id="nvbtxt">Skill</span></a>
               </li>
               <li class="nav-item nb">
-                  <a class="nav-link " href="#project"><span id="part3">Project</span></a>
+                  <a class="nav-link " href="#project"><span id="nvbtxt">Project</span></a>
               </li>
               <li class="nav-item nb">
-                  <a class="nav-link" href="#contact"><span id="part4">Contact</span></a>
+                  <a class="nav-link" href="#contact"><span id="nvbtxt">Contact</span></a>
               </li>
             </ul>
         </div>
@@ -37,7 +62,7 @@
     </div>
         
             <div class="home" id="home" > 
-              <div class="info">
+              <div class="info  homeinfo">
                 <p style="font-size: 30px; color: white;"> Welocome to My Portfolio !</p>
                 <p style="font-size: 25px; color: white; "> I'm <span class="myname">   GAURAV PATIL</span></p>
                 <p style="font-size: 15px; font-family: cambria; color: white;" > Full stack JAVA developer</p>
@@ -46,81 +71,196 @@
         </div>
             <div class="about" id="about">
                 <h5 class="ab" align="center">About Us</h5>
-                <div>
-                  <table  class="abt" >
-                    <tr  width="50%">
-                      <td>
-                        <img src="myimage.jpg" class="myimg">
-                      </td>
-                      <td class="abt">
-                        My objective is simply to be the best web developer 
-                        that I can be and to contribute to the technology industry all 
-                        that I know and can do. I am dedicated to perfecting my craft by 
-                        learning from more seasoned developers, remaining humble,
-                         and continuously making strides to learn all that I can about development.
-                      </td>
-                    </tr>
-                  </table> 
+                <div class="details">
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            My Address
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                         <ul type="none">
+                          <li><b>Permanent Address::</b></li>
+                          <li>At post Mamache Mohide Taluka:Shahada 
+                              Dist:Nandurbar State:Maharashtra
+                          </li>
+                          <li><b>Current Address::</b></li>
+                          <li>Bharti Nagar ,Kothrud pune , Maharashtra</li>
+                        </ul> <code>.show</code> class.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            EDUCATIONAL DETAILS
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                        <ul>
+                          <li>10 th percentage:: 74.60</li>
+                          <li>12 th percentage:: 65.54</li>
+                          <li>Btech In computer Engineering CGPA::8.31</li>
+
+                        </ul>  
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Hobbies & Languages 
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <div>
+                          
+                          <ul>
+                          <h6>Languages I can Speak</h6>
+                            <li>Marathi </li>
+                            <li>Hindi</li>
+                            <li>English</li>
+                          </ul>
+                          <ul>
+                            <h6>My Hobbies</h6>
+                            <li> Swimming</li>
+                            <li>Running</li>
+                            <li>Cycling</li>
+                          </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                
+                  </div>
+                <!-- ends here div  -->
                 </div>
             <div class="skill" id="skill">
-                <h5 class="headingstyle">Skills</h5>
-                  <div class="skil">
-                    <table  align="center" style="height: 300px; width: 90%; color:black  " class="tsk">
-                      <tr style="align:center;">
-                        <td style=>
-                          <h6 align="center" class="sk" >LANGUAGES</h6>
-                          <ul type="none" align="center">
-                            <li>JAVA</li>
-                            <li>C++</li>
-                            <li>SQL</li>
-                            <li>html</li>
-                            <li>css</li>
-                          </ul>
+                <div class="sktable">
+                  <table  align="center">
+                    <tr>
+                      <td> <details>
+                        <summary> Programming Languages</summary>
+                        <ul>
+                          <li> 
+                            <details> 
+                              <summary>Java</summary>
+                              <p> Java is a simple language because its syntax is simple, 
+                                clean, and easy to understand. Complex and ambiguous concepts of C++ are either eliminated 
+                                or re-implemented in Java. For example, pointer and operator overloading are not used in Java.
+                                 Object-Oriented: In Java, everything is in the form of the object.</p>
+                            </details>
+                          </li>
+                          <li> 
+                            <details> 
+                              <summary>Java</summary>
+                              <p></p>
+                            </details>
+                          </li>
+                          <li> 
+                            <details> 
+                              <summary>Java</summary>
+                            </details>
+                          </li>
                           
-                        </td>
-                        <td>
-                         <h6  align="center" class="sk"> TOOLS</h6>
-                         <ul type="none" align="center">
-                          <li>Eclipse</li>
-                          <li>VS code</li>
-                          <li>Android studio</li>
-                          <li>oracle</li>
-                          <li> </li>
-                          <li> </li>
-                          <li> </li>
-                          <li> </li>
                         </ul>
-                       </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <h6 align="center"   class="sk">API's & Framework</h6>
-                          <ul type="none" align="center">
-                            <li>springboot</li>
-                            <li>javacollection</li>
-                            <li>.net</li>
-                            <li>jsp </li>
-                            
-                          </ul>
-                           
-                        </td>
-                        <td>
-                         <h6  align= "center"  class="sk"> OPERATING SYSTEMS</h6>
-                         <ul type="none" align="center">
-                          <li>Linux</li>
-                          <li>Unix</li>
-                          <li>Windows</li>
-                          <li>android</li>
-                        
+                      
+                      </details></td>
+                      <td> <details>
+                        <summary> Programming Languages</summary>
+                        <ul>
+                          <li> 
+                            <details> 
+                              <summary>Java</summary>
+                              <p> Java is a simple language because its syntax is simple, 
+                                clean, and easy to understand. Complex and ambiguous concepts of C++ are either eliminated 
+                                or re-implemented in Java. For example, pointer and operator overloading are not used in Java.
+                                 Object-Oriented: In Java, everything is in the form of the object.</p>
+                            </details>
+                          </li>
+                          <li> 
+                            <details> 
+                              <summary>Java</summary>
+                              <p></p>
+                            </details>
+                          </li>
+                          <li> 
+                            <details> 
+                              <summary>Java</summary>
+                            </details>
+                          </li>
+                          
                         </ul>
-                        
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-
+                      
+                      </details></td>
+                   </tr>
+                    <tr>
+                      <td> <details>
+                        <summary> Programming Languages</summary>
+                        <ul>
+                          <li> 
+                            <details> 
+                              <summary>Java</summary>
+                              <p> Java is a simple language because its syntax is simple, 
+                                clean, and easy to understand. Complex and ambiguous concepts of C++ are either eliminated 
+                                or re-implemented in Java. For example, pointer and operator overloading are not used in Java.
+                                 Object-Oriented: In Java, everything is in the form of the object.</p>
+                            </details>
+                          </li>
+                          <li> 
+                            <details> 
+                              <summary>Java</summary>
+                              <p></p>
+                            </details>
+                          </li>
+                          <li> 
+                            <details> 
+                              <summary>Java</summary>
+                            </details>
+                          </li>
+                          
+                        </ul>
+                      
+                      </details></td><td> <details>
+                        <summary> Programming Languages</summary>
+                        <ul>
+                          <li> 
+                            <details> 
+                              <summary>Java</summary>
+                              <p> Java is a simple language because its syntax is simple, 
+                                clean, and easy to understand. Complex and ambiguous concepts of C++ are either eliminated 
+                                or re-implemented in Java. For example, pointer and operator overloading are not used in Java.
+                                 Object-Oriented: In Java, everything is in the form of the object.</p>
+                            </details>
+                          </li>
+                          <li> 
+                            <details> 
+                              <summary>Java</summary>
+                              <p></p>
+                            </details>
+                          </li>
+                          <li> 
+                            <details> 
+                              <summary>Java</summary>
+                            </details>
+                          </li>
+                          
+                        </ul>
+                      
+                      </details></td>
+                    </tr>
+                  </table>
+                </div>
             </div>
             <div class="project" id="project">
                 <h5 class="headingstyle">Project</h5>
