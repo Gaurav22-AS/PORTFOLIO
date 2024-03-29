@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Home</title>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .content {
+        background: url('background.gif') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+    }
+
+    .content-inner {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .resume-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .resume-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <div class="content">
+        <div class="content-inner">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Thank you for visiting. Explore my work and skills below.</p>
+            <a href="resume.pdf" class="resume-button">Download Resume</a>
+        </div>
+    </div>
+</body>
+</html>
