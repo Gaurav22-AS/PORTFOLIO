@@ -1,232 +1,135 @@
-/* body{
-    background-color: lightblue;
-} */
-.xy{
-    height: 20;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    z-index: 5;
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
 }
-.tcimg{
- width: 100%;
- height: 100%;
-
+h1{
+    font-size:50px;
+    line-height: 64px;
+    color: #222;
 }
-.btn{
-    color:blue;
-    font-size: small;
-    border-radius: 5px;
-    font-weight: bolder;
-    border-color: black;
-    background-image: White;
-    margin-left: 50px;
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
 }
-.btn:hover
-{
-    border-color: blue;
-    color:red;
-    font-size: cambria;
-    box-shadow: 0px 0px 20px white;
-    
-
-}
-.logo{
-    color: white;
-    font-weight: bolder;
-    font-size: 24px;
-    font-family: 'Times New Roman';
-}
-.myname{
-        font-size: 35px;
-        font-weight: bolder;
-        font-family: Garamond;
-        color: rgb(55, 134, 199);
-        text-shadow: 0px 0px 5px blue;
-
-
-}
-.ps{
-    padding-top: 20px;
-}
-.nb{
-    font-weight: bold;
-    
-    
-}
-
-#nvbtxt:hover{
-    color:black;
+h4{
     font-size: 20px;
-    font-weight: bolder;
-    
+    color: #222;
 }
-.ac{
-    margin-top: 20px;
-    color: white;
-    font-family: Cambria;
-    z-index: -1;
-}
-#ff{
-font-size: 30;
-font-weight: bolder;
-font-family: algerian;
-color:white;
-
-
+h6{
+    font-weight: 700;
+    font-size: 12px;
 }
 
-.home{
-    display: flex; 
-    justify-content: space-between; 
-    padding: 20px 100px; 
-    margin-top: 50px;
-    background-image: url(nat.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-position: 100%;
-    height:500px;
-
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
 }
 
+.section-m1{
+    margin: 40px 0;
+}
 
-.homeinfo{
-    
-    background-image: 100%;
-}
-@media (max-width:400px) and (max-height:300px)
-{
-    .homeinfo{
-        font-size: 20px;
-    }
-}    
-.about{
-    height: 550px;
-    background-color:whitesmoke;
- 
-}
-.a{
-    background-color: rgb(70, 60, 49);
-}
-.about p{
-    font-size: larger;
-    font-weight: bolder;
-    padding: 20px;
-}
-.ab{
-    
-    color: black;
-    font-size: 35px;
-    font-family:Cursive ;
-    padding: 40px;
-}
- .abt{
-    text-align: justify;
-    color:black;
-    padding: 0px 30px;
-    font-family: cursive;
-
-} 
-.skill{
-height: 550px;
-width: 100%;
-background-color: aqua;
-
-}
-.skt{
-    display: flex;
-}
-.tsk{
-    color:black;
-    font-weight: bolder;
-}
-.skil{
-    margin-top: 30px;
-    height: 500px;
-}
-.sk{
-   text-align: center;
-    color:orange;
-    font-size:20px
-}
-.sktable{
-    margin: 20px;
-    padding-top: 100px;
-}
-.sk:hover{
-    color:red;
-    font-size: 30px;
-}
-html{
-    scroll-behavior: smooth;
-}
-.ps{
-    text-align: justify;
-}
-.headingstyle{
-text-align: center;
-font-size: 35px;
-font-weight: bolder;
-font-family: cursive;
-color: rgb(54, 12, 49);
-
-}
-.myimg{
-    margin: 0px 50px;
-    height: 280px;
-    width: 300px;
-    border-radius: 50px;
-    vertical-align: middle;
-}
-.myimg:hover
-{
-    border-radius: 140px;
-    box-shadow: 0px 0px 20px blue;
-}
-.co{
-    text-align: center;
-}
-.cop{
-    font-size: 5px;
-    text-align: justify;
-    text-indent: 30px;
-    font-weight: bold;
-    padding: 10px;
-}
-.divcard{
-    z-index: -3;
-}
-.contact{
-    margin: 90px;
-    background-color: white;
-   
-   
-   }
-   .email{
-   
-       width: 100%;
-   }
-   .subm{
-    color: black;
-    background-color: whitesmoke;
-    border-radius: 3px;
-    border-color: black;
-   }
-   .project{
-    margin-top: 50px;
-    padding-top: 50px;
-   height: 800px;
-    z-index: -5;
-   }
-   .dcard{
-    margin-top: 30px;
-   }
-   
-   .gp{
-    height: 30 px;
+body{
     width: 100%;
-    color: white;
-    background-color: black;
-     text-align:right;
-   }
-   
+}
+
+/*  Header start*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:#088178;
+     position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* home page */
+#hero{
+    background-image: url(photo/bdher.jpg);
+    /* position: absolute; */
+    height:90vh;
+    width: 100%;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: top 25%  right 0; 
+    padding: 0 80px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: #088178;
+}
+#hero button{
+    background-image: url(photo/buttonbrush-removebg-preview.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    transition-delay: 10ms;
+    
+}
+#hero button:hover{
+    box-shadow: 0px 0px 5px rgb(95, 111, 116);
+    border-radius: 5px;
+    border: 1px rgb(160, 217, 217);
+    background-image: radial-gradient(rgb(224, 226, 239),rgb(196, 242, 242),rgb(5, 60, 60));
+    color: rgb(35, 1, 1);
+    box-shadow: #222;
+}
